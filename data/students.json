@@ -1,0 +1,18 @@
+[
+  {
+    "id": "de7a02c4-ed35-4c60-bce6-e208bcbe41aa",
+    "name": "Micheal Smith",
+    "dob": "2025-12-17",
+    "gpa": 3.5,
+    "major": "Business",
+    "registrationNumber": "REG-2025-01"
+  },
+  {
+    "id": "6026c22b-0a09-4cd4-8945-8eeb24feddc7",
+    "name": "Jane Doe",
+    "dob": "2025-12-18",
+    "gpa": 2.2,
+    "major": "Computer Science",
+    "registrationNumber": "REG-2025-02"
+  }
+]
