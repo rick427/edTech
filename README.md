@@ -63,7 +63,7 @@ The project folder structure:
 
 ```bash
 # Clone the repo
-git clone <your-repo-url>
+git clone https://github.com/rick427/edTech.git
 cd <repo-folder>
 
 # Install dependencies
