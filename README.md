@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Students Management App
+
+A simple **Next.js 13+ (App Router) application** for managing student records. The app allows you to create, read, update, and delete students, with a clean UI built using **Chakra UI**, and form management handled by **React Hook Form**.
+
+---
+
+## Features
+
+- **Create, Read, Update, Delete (CRUD) Students**
+- **Form validation** with React Hook Form
+- **Search** students by name, GPA, or department
+- **Student detail view** with all relevant information
+- **Delete confirmation** with toast notifications
+- **Responsive UI** with Chakra UI components
+- **Mock data storage** using JSON files (`students.json`)
+- **Unit tests** for forms and service functions (using Jest & React Testing Library)
+
+---
+
+## Technologies Used
+
+- **Next.js 13+** (App Router)  
+- **React 18+**  
+- **TypeScript**  
+- **Chakra UI** (UI components)  
+- **React Hook Form** (Form handling & validation)  
+- **Jest + React Testing Library** (Unit tests)  
+- **MSW** (Mock Service Worker for API testing)  
+
+---
+
+## Project Structure
+
+The project folder structure:
+
+    /app
+      /students
+        /[id]
+          page.tsx          # Student details
+          edit/page.tsx     # Edit student
+        new/page.tsx        # Create new student
+        page.tsx            # List students
+    /lib
+      db.ts                 # Type definitions
+      students.service.ts   # CRUD helpers
+    /components
+      pages
+        students-table.tsx  # Table display
+        student-info.tsx    # Student detail card
+      ui
+        toaster.tsx         # Custom toast notifications
+    /public
+      /data
+        students.json       # Mock student data
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js v18+
+- npm or yarn
+
+### Installation
 
 ```bash
-npm run dev
+# Clone the repo
+git clone <your-repo-url>
+cd <repo-folder>
+
+# Install dependencies
+npm install
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Running the App
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Start the development server
+npm run dev
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# or
+yarn dev
+```
