@@ -71,7 +71,7 @@ npm install
 # or
 yarn install
 ```
-After installing create and .env file with the following content
+After installing create a .env file with the following content
 
 ```js
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
