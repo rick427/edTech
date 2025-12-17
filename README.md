@@ -85,3 +85,55 @@ npm run dev
 # or
 yarn dev
 ```
+
+---
+
+## Available Scripts
+
+- **dev** Start Next.js development server
+- **build** Build the app for production
+- **start** start production server
+
+---
+
+## API Endpoints
+
+- **GET - /api/students** Get all students
+- **GET - /api/students/:id** Get student by ID
+- **POST - /api/students** Create a new student
+- **PUT - /api/students** Update student by ID
+- **DELETE - /api/students/:id** Delete student by ID
+
+---
+
+## Student Data
+Stored in /public/data/students.json with the following structure
+
+```js
+[
+    {
+        "id": "uuid",
+        "name": "John Doe"
+        "dob": "YYYY-MM-DD",
+        "gpa": 3.5,
+        "major": "Computer Science",
+        "registrationNumber": "REG-2025-01"
+    }
+]
+```
+
+---
+
+## UI Hightlights
+- Student Table - Sortable, filterable, searchable,
+- Student Card - Display avatar, name, major, GPA,DOB, registration number
+- Toaster Notification - Success/error messages on CRUD operations
+- Form Validation - Required fields, GPA range (0-4), proper date format
+
+---
+
+## Future Improvements
+- Connect to a real backend database instead of reading and writing to a JSON file 
+- Add pagination for the student table 
+- Implement role-based access control for CRUD operations 
+- Add E2E tests using Playwright or Cypress
