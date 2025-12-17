@@ -13,7 +13,6 @@ A simple **Next.js 13+ (App Router) application** for managing student records. 
 - **Delete confirmation** with toast notifications
 - **Responsive UI** with Chakra UI components
 - **Mock data storage** using JSON files (`students.json`)
-- **Unit tests** for forms and service functions (using Jest & React Testing Library)
 
 ---
 
@@ -24,8 +23,6 @@ A simple **Next.js 13+ (App Router) application** for managing student records. 
 - **TypeScript**  
 - **Chakra UI** (UI components)  
 - **React Hook Form** (Form handling & validation)  
-- **Jest + React Testing Library** (Unit tests)  
-- **MSW** (Mock Service Worker for API testing)  
 
 ---
 
